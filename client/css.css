@@ -1,0 +1,9 @@
+.mainFrame{
+    background-color: white;
+    border: 2px solid grey;
+    border-radius: 25px;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    padding: 10px;
+}
