@@ -5,7 +5,7 @@ socket.addEventListener('message', function (event) {
     if(event.data.startsWith("id:")){
         var message = event.data.split(": ");
         console.log(message[1]);
-        document.location.href = `Toende.html?id=${message[1]}`;
+        document.location.href = `toende.html?id=${message[1]}`;
     }
 });
 
