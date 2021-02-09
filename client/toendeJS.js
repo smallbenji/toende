@@ -5,6 +5,9 @@ var range;
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const id = urlParams.get('id');
+if(id==null){
+    document.location.href = './index.html';
+}
 console.log(`ID: ${id}`);
 socket.addEventListener('open', function (event) {
     socket.send(`login: ${id}`);
